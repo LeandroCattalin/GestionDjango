@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion</title>
+    <!-- Puedes agregar más archivos CSS o enlaces aquí -->
+    {% load static %}  <!-- Cargar la etiqueta estática -->
+    <link rel="stylesheet" type="text/css" href="{% static 'gestion/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Aplicacion gestion SGC ESNM</h1>
+        <h2>Ciclo lectivo {{ cicloLectivo }}</h2>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="barra-lateral">
+                <ul>
+                    <li><a href="{% url 'cadetes' %}">Cadetes</a></li>
+                    <li><a href="{% url 'notas' %}">Notas</a></li>
+                    <li><a href="{% url 'araucano' %}">Araucano</a></li>
+                    <li><a href="{% url 'estadisticasypremios' %}">Estadísticas y Premios</a></li>
+                    <li><a href="{% url 'aptitudesygut' %}">Aptitudes y GUT</a></li>
+                    <li><a href="{% url 'exportar' %}">Exportar</a></li>
+                    <li><a href="{% url 'nuevociclolectivo' %}">Nuevo Ciclo Lectivo</a></li>
+                    <li><a href="{% url 'ordendemerito' %}">Orden de Mérito</a></li>
+                    <li><a href="{% url 'materias' %}">Materias</a></li>
+                    <li><a href="{% url 'sistema' %}">Sistema</a></li>
+                </ul>
+            </div>
+            <div class="contenido">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Gestion SGC ESNM</p>
+    </footer>
+</body>
+</html>
