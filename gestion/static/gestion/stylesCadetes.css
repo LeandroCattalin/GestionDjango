@@ -1,52 +1,23 @@
-/*Styles css*/
-
-
-html{
-    background-color: grey;
-    overflow-y: auto; /* Habilita el scroll vertical */
-    overflow-x: hidden;
-}
-
-header{
-    background-color: #333;
-    padding: 5px;
-    width: 100%;
-}
-
-footer{
-    position: fixed;
-    width: 100%;
-    background-color: #333;
-    position: relative;
-    z-index: -1;
-    color:white;
-    height: 100%;
-    padding: 20px;
-}
-
-body{
-    margin: 0;
-}
-
-.barra-lateral {
+/* Styles css*/
+.barra-lateral-cadetes {
     width: 200px; /* Ancho de la barra lateral */
     background-color: #333; /* Color de fondo de la barra lateral */
     color: white; /* Color del texto */
-    height: 100%; /* Altura completa de la ventana */
+    height: 551px; /* Altura completa de la ventana */
     position: relative; /* Fija la barra lateral */
     padding: 20px; /* Espaciado interno */
 }
 
-.barra-lateral ul {
+.barra-lateral-cadetes ul {
     list-style-type: none; /* Elimina los puntos de la lista */
     padding: 0; /* Elimina el relleno */
 }
 
-.barra-lateral ul li {
-    margin: 15px 0; /* Margen entre los elementos de la lista */
+.barra-lateral-cadetes ul li {
+    margin: 15px 0; /* Margen entre los elementos de la lista*/
 }
 
-.barra-lateral ul li a {
+.barra-lateral-cadetes ul li a {
     color: white; /* Color del enlace */
     text-decoration: none; /* Elimina el subrayado */
     display: block; /* Hace que el enlace ocupe todo el espacio del li */
@@ -58,17 +29,7 @@ body{
     transition: background-color 0.3s ease; /* Suaviza la transición */
 }
 
-.barra-lateral ul li a:hover {
+.barra-lateral-cadetes ul li a:hover {
     background-color: grey; /* Color de fondo al pasar el mouse */
     color: white; /* Color de texto al pasar el mouse */
-}
-
-.contenido {
-    flex-grow: 1;
-    padding: 0px; /* Espaciado interno para el contenido */
-}
-
-.contenedor {
-    display: flex;
-    flex-grow: 1;
 }

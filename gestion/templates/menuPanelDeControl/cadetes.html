@@ -1,0 +1,22 @@
+{% extends 'paneldecontrol.html' %}
+
+{% block title %}Cadetes{% endblock %}
+
+{% block content %}
+<div class="contenedor-cadetes">
+    <div class="barra-lateral-cadetes">
+        <ul>
+            <li><a href="{% url 'certificados' %}">Certificados/Analitico<br></a></li>
+            <li><a href="{% url 'darDeBaja' %}">Dar de baja<br>por ciclo lectivo</a></li>
+            <li><a href="{% url 'datosPersonales' %}">Datos personales<br>de cadetes</a></li>
+            <li><a href="{% url 'excluirOrdenDeMerito' %}">Excluir del<br>orden de merito</a></li>
+            <li><a href="{% url 'marcarNoRegulares' %}">Marcar cadetes<br>no regulares</a></li>
+            <li><a href="{% url 'materiasCursadas' %}">Materias cursadas</a></li>
+            <li><a href="{% url 'resumenDeCalificaciones' %}">Resumenes de calificaciones</a></li>
+        </ul>
+    </div>
+    <div class="contenido-cadetes">
+        {% block contentCadetes %}{% endblock %}
+    </div>
+</div>
+{% endblock %}
