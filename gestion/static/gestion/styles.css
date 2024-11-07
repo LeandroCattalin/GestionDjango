@@ -25,16 +25,16 @@ footer{
 }
 
 body{
-    margin: 0;
+    margin:0px;
 }
 
 .barra-lateral {
-    width: 200px; /* Ancho de la barra lateral */
+    width: 230px; /* Ancho de la barra lateral */
     background-color: #333; /* Color de fondo de la barra lateral */
     color: white; /* Color del texto */
     height: 100%; /* Altura completa de la ventana */
-    position: relative; /* Fija la barra lateral */
-    padding: 20px; /* Espaciado interno */
+    position:relative; /* Fija la barra lateral */
+    margin-top: 0%;
 }
 
 .barra-lateral ul {
@@ -43,19 +43,20 @@ body{
 }
 
 .barra-lateral ul li {
-    margin: 15px 0; /* Margen entre los elementos de la lista */
+    margin: 15px; /* Margen entre los elementos de la lista */
 }
 
 .barra-lateral ul li a {
     color: white; /* Color del enlace */
     text-decoration: none; /* Elimina el subrayado */
-    display: block; /* Hace que el enlace ocupe todo el espacio del li */
+    display:block; /* Hace que el enlace ocupe todo el espacio del li */
     padding: 10px 20px; /* Espaciado interno */
     background-color: black; /* Color de fondo original */
     color: white; /* Color de texto */
     text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 10px; /* Bordes redondeados */
     transition: background-color 0.3s ease; /* Suaviza la transición */
+
 }
 
 .barra-lateral ul li a:hover {
@@ -71,4 +72,10 @@ body{
 .contenedor {
     display: flex;
     flex-grow: 1;
+}
+
+
+.subrayado{
+    text-decoration: none;
+    color:black;
 }
