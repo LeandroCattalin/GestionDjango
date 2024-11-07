@@ -1,1 +1,20 @@
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+.env/
+
+# Django
+db.sqlite3
+/media/
+staticfiles/
+
+# Secrets
 gestionDjango/settings.py
+
+# VSCode or other IDE specific
+.vscode/
+.idea/
