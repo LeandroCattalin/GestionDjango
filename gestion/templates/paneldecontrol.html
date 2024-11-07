@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>Aplicacion gestion SGC ESNM</h1>
+        <h1><a class="subrayado" href="{% url 'paneldecontrol' %}" >Aplicacion gestion SGC ESNM</a></h1>
         <h2>Ciclo lectivo {{ cicloLectivo }}</h2>
     </header>
     <main>
@@ -27,6 +27,8 @@
                     <li><a href="{% url 'ordendemerito' %}">Orden de Mérito</a></li>
                     <li><a href="{% url 'materias' %}">Materias</a></li>
                     <li><a href="{% url 'sistema' %}">Sistema</a></li>
+                    <li><a href="{% url 'paneldecontrol' %}">Volver</a></li>
+
                 </ul>
             </div>
             <div class="contenido">
